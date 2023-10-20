@@ -47,7 +47,6 @@
   height: 100vh;
 }
 
-
 .header {
   left: 0;
   bottom: 0;
@@ -123,7 +122,6 @@
 }
 
 .big-card img {
-  /* display: block; */
   width: 100%;
 }
 
@@ -255,7 +253,6 @@ footer {
 
 .footer-column li {
   margin-bottom: 15px;
-  
 }
 
 .footer-column a {
@@ -317,7 +314,6 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
@@ -335,6 +331,7 @@ footer {
     font-weight: bolder;
     text-align: center;
   }
+
   .big-latest .small-card {
     width: 100%;
   }
@@ -378,6 +375,3 @@ footer {
     font-size: 14px;
   }
 }
-
-
-
