@@ -89,7 +89,8 @@ h2 {
 }
 
 table {
-  width: 100%;
+  width: 98%;
+  margin: auto;
   border-collapse: collapse;
   background-color: #ddd;
 }
@@ -107,10 +108,12 @@ th {
 }
 
 .big-container {
+  width: 300px;
   display: flex;
   flex-direction: column;
   margin: auto;
-  gap: 1.8rem;
+  justify-self: center;
+  gap: 1.5rem;
 }
 
 .big-container h2 {
@@ -131,10 +134,9 @@ th {
 
 .big-card img {
   display: flex;
-  width: 40px;
+  width: 120px;
   height: 80px;
   border-radius: 5px;
-  padding-right: 5px;
 }
 
 .big-card-text h6 {
@@ -143,7 +145,7 @@ th {
 }
 
 .big-card-text h4 {
-  font-size: 12px;
+  margin-left: 8px;
   font-weight: bold;
 }
 
