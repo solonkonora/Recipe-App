@@ -3,13 +3,51 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 #myVideo {
     width: 100%;
     height: auto;
     max-width: 640px;
     display: block;
     margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
   }
+  
+  .four-column {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .column {
+    /* flex: 1; */
+    text-align: center;
+    color: gray;
+    border-right: 1px solid gray;
+    padding: 10px;
+  }
+  
+  .column:last-child {
+    border-right: none;
+  }
+  
+  h6, i {
+    margin: 0;
+  }
+  
+  /* h6 {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  } */
 
 
 
@@ -181,7 +219,7 @@ th {
 }
 
 .contains {
-  width: 100vw;
+  width: 300px;
   margin: auto;
   padding: 20px;
   background-color: #fb9797;
@@ -224,7 +262,7 @@ input[type="email"] {
 }
 
 button {
-  width: 100%;
+  /* width: 100%; */
   padding: 10px;
   border: none;
   border-radius: 4px;
