@@ -5,49 +5,40 @@
 }
 
 #myVideo {
-    width: 100%;
-    height: auto;
-    max-width: 640px;
-    display: block;
-    margin: 0 auto;
+  width: 100%;
+  height: auto;
+  max-width: 640px;
+  display: block;
+  margin: 0 auto;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+}
+
+.four-column {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+}
   
-  .four-column {
-    display: flex;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 10px;
-  }
-  
-  .column {
-    /* flex: 1; */
-    text-align: center;
-    color: gray;
-    border-right: 1px solid gray;
-    padding: 10px;
-  }
-  
-  .column:last-child {
-    border-right: none;
-  }
-  
-  h6, i {
-    margin: 0;
-  }
-  
-  /* h6 {
-    margin: 5px 0;
-    font-size: 14px;
-  }
-  
-  .fa {
-    margin-right: 5px;
-  } */
+.column {
+  /* flex: 1; */
+  text-align: center;
+  color: gray;
+  border-right: 1px solid gray;
+  padding: 10px;
+}
+
+.column:last-child {
+  border-right: none;
+}
+
+h6, i {
+  margin: 0;
+}
+
 
 
 
@@ -113,15 +104,6 @@ h2 {
   justify-content: center;
   margin-left: 10px;
 }
-
-
-
-
-
-
-
-
-
 
 .instruction-list {
   list-style-type: none;
@@ -269,4 +251,35 @@ button {
   background-color: #fd5203;
   color: #fff;
   cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+  #overall-column{
+    display: flex;
+    flex-direction: rows;
+    margin-top: 25px;
+  }
+}
+    /* margin-top: 10px;
+    background-color: brown; 
+
+  }
+
+  .four-column {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 0 10px;
+}
+
+  #first-column{
+    margin: auto;
+    width: 55%;
+    background-color: orange;
+  }
+
+  #second-column{
+    width: 45%;
+    background-color: cyan;
+  }
 }
