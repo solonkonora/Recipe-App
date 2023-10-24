@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#myVideo {
+  width: 100%;
+  height: auto;
+  max-width: 640px;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.four-column {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+  
+.column {
+  /* flex: 1; */
+  text-align: center;
+  color: gray;
+  border-right: 1px solid gray;
+  padding: 10px;
+}
+
+.column:last-child {
+  border-right: none;
+}
+
+h6, i {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+.recipe {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.ingredient-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.ingredient-list li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.ingredient-list input[type="radio"] {
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ingredient-list label {
+  display: inline-block;
+  padding-left: 40px;
+}
+
+.ingredient-list label:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.ingredient-list input[type="radio"]:checked+label:before {
+  background-color: #333;
+}
+
+.ingredient-list label:before,
+.ingredient-list input[type="radio"]:checked+label:before {
+  content: '';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.instruction-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.instruction-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 50px;
+}
+
+.instruction-list li:before {
+  content: counter(step-counter);
+  counter-increment: step-counter;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f4a00f;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.nutrition-table {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+table {
+  width: 98%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: #ddd;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #817f7f;
+}
+
+th {
+  background-color: #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.big-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-self: center;
+  gap: 1.5rem;
+}
+
+.big-container h2 {
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: start;
+}
+
+.big-card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  /* height: 480px; */
+}
+
+.big-card img {
+  display: flex;
+  width: 120px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.big-card-text h6 {
+  font-size: 12px;
+  color: #fa8d08;
+  margin-left: 8px;
+}
+
+.big-card-text h4 {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.contains {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fb9797;
+}
+
+.contains form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.headings {
+  text-align: center;
+}
+
+h1 {
+ font-size: 32px;
+ font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+input {
+  justify-self: center;
+  justify-content: left;
+}
+
+input[type="email"] {
+  justify-self: center;
+  width: 25%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  /* width: 100%; */
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fd5203;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+  #overall-column{
+    display: flex;
+    flex-direction: rows;
+    margin-top: 25px;
+  }
+}
+    /* margin-top: 10px;
+    background-color: brown; 
+
+  }
+
+  .four-column {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 0 10px;
+}
+
+  #first-column{
+    margin: auto;
+    width: 55%;
+    background-color: orange;
+  }
+
+  #second-column{
+    width: 45%;
+    background-color: cyan;
+  }
+}
